@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/rimouski" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <title>EduSolutions</title>
+</head>
+
+<body>
+    <nav>
+        <a class="brand" href="index.html">
+            <img src="images/logo.png" alt="logo" class="brand-logo">
+            <h1 class="brand-title">EduSolutions</h1>
+        </a>
+        <div class="nav-menu">
+            <a href="" class="menu-item">Home</a>
+            <a href="" class="menu-item">About</a>
+            <a href="" class="menu-item">Features</a>
+            <a href="" class="menu-item">Contact us</a>
+            <a href="" class="menu-item">Refer and Earn</a>
+        </div>
+        <div>
+            <a href="" class="cta-btn">Get Started</a>
+            <button class="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <aside id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <button class="sidebar-close" onclick="closeNav()"><i class="fa-solid fa-xmark"
+                style="color: white"></i></button>
+        <div class="sidenav-menu">
+            <a href="" class="menu-item">Home</a>
+            <a href="" class="menu-item">About</a>
+            <a href="" class="menu-item">Features</a>
+            <a href="" class="menu-item">Contact us</a>
+            <a href="" class="menu-item">Refer and Earn</a>
+        </div>
+    </aside>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p class="caption">All in 1 learning and school management software</p>
+            <h1 class="hero-title">
+                <span class="highlight">EDUSOLUTIONS</span> <br>
+                <span>LEARNING AND SCHOOL MANAGEMENT SYSTEM</span>
+            </h1>
+            <p class="hero-desc">
+                Automate your school’s operations, streamline learning, and connect parents,
+                students, and staffs
+                anytime, anywhere.
+            </p>
+            <div class="hero-btns">
+                <a href="" class="cta-btn">Get Started</a>
+                <button class="cta-btn demo-btn">Watch Demo <i class="fa-regular fa-circle-play"
+                        style="font-size: 1.1rem;"></i></button>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="partners">
+            <h3 class="title">Schools we've partnered with</h3>
+            <div class="container scroller" data-direction="right" data-speed="slow">
+                <div class="scroller__inner">
+                    <div class="brand">
+                        <img src="images/becky-parker.png" alt="becky-parker logo" class="badge">
+                        <p class="name">Becky Parker</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/crissa.png" alt="crissa logo" class="badge">
+                        <p class="name">CRISSA</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/impact.png" alt="impact logo" class="badge">
+                        <p class="name">Impact</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/ctc.png" alt="ctc logo" class="badge">
+                        <p class="name">CTC</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/fgc-kwali.png" alt="kwali-logo" class="badge">
+                        <p class="name">FGC Kwali</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/convenant.png" alt="convenant logo" class="badge">
+                        <p class="name">Convenant</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/bluecrest.png" alt="bluecrest logo" class="badge">
+                        <p class="name">Blue Crest</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/jofay.png" alt="jofay logo" class="badge">
+                        <p class="name">Jofay</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/mummy-place.png" alt="mummy-place logo" class="badge">
+                        <p class="name">Mummys Place</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/parker.png" alt="parker logo" class="badge">
+                        <p class="name">Parker</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/greenfield.png" alt="greenfield logo" class="badge">
+                        <p class="name">GreenField</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/gabliz.png" alt="gabliz logo" class="badge">
+                        <p class="name">Gabliz</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/preston.png" alt="preston logo" class="badge">
+                        <p class="name">Preston</p>
+                    </div>
+                    <div class="brand">
+                        <img src="images/logical.png" alt="logical logo" class="badge">
+                        <p class="name">Logical</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutus" data-aos="fade-up">
+            <div class="left">
+                <p class="title">About Us</p>
+                <h1 class="header">Why EduSolutions</h1>
+                <p class="desc">
+                    Edusolutions is an affordable, reliable, and dynamic cloud-based learning and school management
+                    software that automates
+                    a school's diverse operations. It includes a standard website and unique domain name to promote your
+                    school to a vast
+                    local and global audience. Developed by a team of experienced project managers, software engineers,
+                    and designers,
+                    Edusolutions is the result of 15 years of dedicated research and development.
+                </p>
+                <a class="explore-link">Explore More about us <i class="fa-solid fa-arrow-right"
+                        style="margin-left: 5px;"></i></a>
+            </div>
+            <div class="right">
+                <div class="info-card top">
+                    <p class="number">15+</p>
+                    <p class="text">Year of<br>Experience</p>
+                </div>
+                <div class="info-card bottom">
+                    <p class="number">100+</p>
+                    <p class="text">Schools<br>Onboarded</p>
+                </div>
+                <div class="outer-ring">
+                    <div class="inner-ring"></div>
+                </div>
+                <img src="images/computer.jpg" alt="" class="image1">
+                <img src="images/man-typing.jpg" alt="" class="image2">
+            </div>
+        </section>
+
+        <section class="benefits" data-aos="fade-up">
+            <p class="title">Benefits</p>
+            <h3 class="header">Why you should choose us</h3>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="images/educational-system.png" alt="" class="icon1">
+                        <img src="images/educational-system.png" alt="" class="icon2">
+                    </div>
+                    <h3 class="card-title">EDUCATIONAL SYSTEM</h3>
+                    <p class="card-text">Edusolutions supports various educational systems. the platform allows you to
+                        easily configure
+                        grading criteria, class
+                        levels, result collation methods, and report card formats.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="images/continuous.png" alt="" class="icon1">
+                        <img src="images//continuous.png" alt="" class="icon2">
+                    </div>
+                    <h3 class="card-title">CONTINOUS AVAILABILTY</h3>
+                    <p class="card-text">We ensure 99% uptime by hosting our application on world-class data centers,
+                        the
+                        same
+                        facilities that serve leading
+                        international organizations.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="images/required.png" alt="" class="icon1">
+                        <img src="images/required.png" alt="" class="icon2">
+                    </div>
+                    <h3 class="card-title">REQUIRED SOFTWARE</h3>
+                    <p class="card-text">All you need is a web browser such as Google Chrome, Mozilla Firefox, or
+                        Internet
+                        Explorer on a
+                        computer, mobile device,
+                        or tablet, along with a moderate internet connection.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="images/technical.png" alt="" class="icon1">
+                        <img src="images//technical.png" alt="" class="icon2">
+                    </div>
+                    <h3 class="card-title">TECHNICAL SUPPORT</h3>
+                    <p class="card-text">Our support team is available throughout the week via email at
+                        support@edusolutionsonline.us, phone at +2348068373182,
+                        and live chat on weekdays to assist with any technical issues.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="features" data-aos="fade-up">
+            <p class="title">Features</p>
+            <h1 class="header">Comprehensive Tools for Modern Education</h1>
+
+            <div class="container">
+                <div class="item">
+                    <div class="image-wrapper align-right">
+                        <img src="images/student-dashboard.png" alt="">
+                    </div>
+                    <div class="content border-left">
+                        <div class="icon">
+                            <img src="images/analytics-up.png" alt="">
+                        </div>
+                        <h3 class="title">Personalized Student Dashboard</h3>
+                        <p class="text">Edusolutions offers a comprehensive dashboard that gives students, parents, and
+                            teachers instant
+                            access to vital
+                            academic information. From basic profile data to session details and medical records,
+                            everything is centralized
+                            and easy
+                            to navigate—promoting transparency and improving communication within the school system.</p>
+                    </div>
+                </div>
+
+                <div class="item item-reverse">
+                    <div class="content border-right">
+                        <div class="icon">
+                            <img src="images/analytics-02.png" alt="">
+                        </div>
+                        <h3 class="title">Result Analysis & Performance Insights</h3>
+                        <p class="text">
+                            Generate precise, visually rich report cards and analytics with Edusolutions. Our result
+                            management system supports
+                            various grading formats, cumulative scores, and class positioning. The performance graph
+                            provides clear insights into
+                            students’ strengths and academic progress—empowering educators and parents to make
+                            data-driven decisions.
+                        </p>
+                    </div>
+
+                    <div class="image-wrapper align-left">
+                        <img src="images/result-analysis.png" alt="">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image-wrapper align-right">
+                        <img src="images/interactive-student-dashboard.jpg" alt="">
+                    </div>
+                    <div class="content border-left">
+                        <div class="icon">
+                            <img src="images/students.png" alt="">
+                        </div>
+                        <h3 class="title">Interactive Student Dashboard</h3>
+                        <p class="text">
+                            Edusolutions provides a personalized and secure dashboard for each student, giving instant
+                            access to academic records,
+                            payment history, virtual classes, notes, and more. With a simple and intuitive layout,
+                            students can stay organized and
+                            engaged in their learning journey. Notification badges highlight pending updates, ensuring
+                            students never miss important
+                            information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 20px 0;">
+                <a class="explore-link">Explore More about us <i class="fa-solid fa-arrow-right"
+                        style="margin-left: 5px;"></i></a>
+            </div>
+        </section>
+
+
+        <section class="preview" data-aos="fade-up">
+            <div class="header">
+                <h3 class="title">Get a Glimpse of Our <br>Management Platform</h3>
+                <a href="#" class="demo-link">Watch live demo <i class="fa-solid fa-arrow-right"
+                        style="margin-left: 5px;"></i></a>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <video src="images/edusolutions-preview.mp4" alt=""></video>
+                    <h3 class="heading">Edusolutions Preview</h3>
+                    <p class="text">Explore a live demo of our all-in-one school management system, showcasing
+                        features
+                        like result management, payments,
+                        and virtual classrooms.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <video src="images/cbt.mp4" alt=""></video>
+                    <h3 class="heading">New Exam/CBT System</h3>
+                    <p class="text">Explore a live demo of our all-in-one school management system, showcasing
+                        features
+                        like result management, payments,
+                        and virtual classrooms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" data-aos="fade-up">
+            <p class="title">Pricing</p>
+            <h1 class="header">Check out our pricing plan</h1>
+
+            <div class="container">
+                <div class="plan-item">
+                    <div>
+                        <div class="plan-name">Standard</div>
+                        <p class="text">For all individuals and starters who
+                            wantto start with domaining.</p>
+                        <p class="text-plus">Per school, per year</p>
+                        <hr>
+                    </div>
+                    <div class="card-body">
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="view-btn">View More</a>
+                    </div>
+                </div>
+
+                <div class="plan-item primary">
+                    <div class="card-header">
+                        <div class="plan-name">Premium</div>
+                        <p class="text">For professional domain names
+                            investors with a big portfolio.</p>
+                        <p class="text-plus">Per school, per year</p>
+                        <hr>
+                    </div>
+                    <div class="card-body">
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="view-btn reverse-color">View More</a>
+                    </div>
+                </div>
+
+                <div class="plan-item">
+                    <div class="card-header">
+                        <div class="plan-name">Pro</div>
+                        <p class="text">For all individuals and starters who
+                            wantto start with domaining.</p>
+                        <p class="text-plus">Per school, per year</p>
+                        <hr>
+                    </div>
+                    <div class="card-body">
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                        <p class="item">
+                            <i class="fa-solid fa-circle-check" style="margin-right: 5px;"></i>
+                            Student & Staff Info Management
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="view-btn">View More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial" data-aos="fade-up">
+            <h3>Here is what our Clients are saying About us</h3>
+
+            <div class="container swiper">
+                <div class="swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-body">
+                            <p>Edusolution is simply the best School Management System we have worked with. it is very
+                                easy
+                                to use. We have been using
+                                it for 13years and it is also constantly upgraded to meet the latest Software
+                                requirement. I
+                                can recommend it to any
+                                school</p>
+                        </div>
+                        <div class="card-footer">
+                            <img src="images/parker.png" class="logo" alt="">
+                            <div>
+                                <h4 class="name">Mr Kofi</h4>
+                                <p class="title">Admin officer: Parker International School</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card swiper-slide">
+                        <div class="card-body">
+                            <p>Edusolution is simply the best School Management System we have worked with. it is very
+                                easy
+                                to use. We have been using
+                                it for 13years and it is also constantly upgraded to meet the latest Software
+                                requirement. I
+                                can recommend it to any
+                                school</p>
+                        </div>
+                        <div class="card-footer">
+                            <img src="images/parker.png" class="logo" alt="">
+                            <div>
+                                <h4 class="name">Mr Kofi</h4>
+                                <p class="title">Admin officer: Parker International School</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-body">
+                            <p>Edusolution is simply the best School Management System we have worked with. it is very
+                                easy
+                                to use. We have been using
+                                it for 13years and it is also constantly upgraded to meet the latest Software
+                                requirement. I
+                                can recommend it to any
+                                school</p>
+                        </div>
+                        <div class="card-footer">
+                            <img src="images/parker.png" class="logo" alt="">
+                            <div>
+                                <h4 class="name">Mr Kofi</h4>
+                                <p class="title">Admin officer: Parker International School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="faq" data-aos="fade-up">
+            <p class="title">FAQs</p>
+            <h1 class="header">Frequently Asked Questions</h1>
+            <div class="container">
+                <div class="collapsible-item">
+                    <button type="button" class="collapsible">
+                        <span>How do I create account on the platform?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur. Ultricies et justo eget quis sit. Id consequat massa
+                            duis ipsum leo lorem
+                            faucibus. Purus massa ac vitae risus morbi consectetur. Venenatis nunc laoreet fermentum
+                            eget auctor aliquet. Vel justo
+                            velit volutpat sed suscipit semper a interdum. Nibh viverra nulla pretium faucibus felis est
+                            nisl lectus. Lacinia
+                            pellentesque mi ipsum nisl ultrices. Eu sit sem eu turpis augue vitae..</p>
+                    </div>
+                </div>
+
+                <div class="collapsible-item">
+                    <button type="button" class="collapsible">
+                        <span>How do I create account on the platform?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur. Ultricies et justo eget quis sit. Id consequat massa
+                            duis ipsum leo lorem
+                            faucibus. Purus massa ac vitae risus morbi consectetur. Venenatis nunc laoreet fermentum
+                            eget auctor aliquet.
+                            Vel justo
+                            velit volutpat sed suscipit semper a interdum. Nibh viverra nulla pretium faucibus felis est
+                            nisl lectus.
+                            Lacinia
+                            pellentesque mi ipsum nisl ultrices. Eu sit sem eu turpis augue vitae..</p>
+                    </div>
+                </div>
+
+
+                <div class="collapsible-item">
+                    <button type="button" class="collapsible">
+                        <span>How do I create account on the platform?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur. Ultricies et justo eget quis sit. Id consequat massa
+                            duis
+                            ipsum leo lorem
+                            faucibus. Purus massa ac vitae risus morbi consectetur. Venenatis nunc laoreet fermentum
+                            eget
+                            auctor aliquet.
+                            Vel justo
+                            velit volutpat sed suscipit semper a interdum. Nibh viverra nulla pretium faucibus felis est
+                            nisl lectus.
+                            Lacinia
+                            pellentesque mi ipsum nisl ultrices. Eu sit sem eu turpis augue vitae..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <a class="brand" href="index.html">
+                    <img src="images/logo.png" alt="logo" class="brand-logo">
+                    <h1 class="brand-title" style="color: white;">EduSolutions</h1>
+                </a>
+                <p>Edusolutions is an affordable, reliable, and dynamic cloud-based learning and school management
+                    software
+                    that automates
+                    a school's diverse operations</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+
+                <div class="contacts-wrapper">
+                    <p>Contact us</p>
+
+                    <div class="email-wrapper">
+                        <span class="email"><i class="fa-solid fa-envelope-open"></i></span>
+                        <div>
+                            <p class="title">Email</p>
+                            <p>info@edusolutionsonline.us</p>
+                        </div>
+                    </div>
+
+                    <div class="phone-wrapper">
+                        <span class="phone"><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <p class="title">Phone</p>
+                            <p>(+234) 703 393 4211</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Information required</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#">Markerter’s login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Downloads</h3>
+
+                <ul>
+                    <li>
+                        <a href="#">Live Preview- WebApp</a>
+                    </li>
+                    <li>
+                        <a href="#">Edusolutions -PRO (pdf)</a>
+                    </li>
+                    <li>
+                        <a href="#">ADS Video</a>
+                    </li>
+                    <li>
+                        <a href="#">Book a Demo</a>
+                    </li>
+                    <li>
+                        <a href="#">Software Preview (MP4)</a>
+                    </li>
+                    <li>
+                        <a href="#">Live Preview (MP4)</a>
+                    </li>
+                    <li>
+                        <a href="#">Video (Live Preview)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Apply</h3>
+
+                <ul>
+                    <li>
+                        <a href="#">Apply Online</a>
+                    </li>
+                    <li>
+                        <a href="#">Refer and Earn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">Copyright © 2025 Edusolutions | All Rights Reserved | Terms and Conditions | Privacy Policy
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
