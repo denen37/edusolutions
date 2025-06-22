@@ -22,15 +22,15 @@
             <h1 class="brand-title">EduSolutions</h1>
         </a>
         <div class="nav-menu">
-            <a href="" class="menu-item">Home</a>
-            <a href="" class="menu-item">About</a>
-            <a href="" class="menu-item">Features</a>
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="aboutus.html" class="menu-item">About</a>
+            <a href="features.html" class="menu-item">Features</a>
             <a href="" class="menu-item">Contact us</a>
             <a href="" class="menu-item">Refer and Earn</a>
         </div>
         <div>
             <a href="" class="cta-btn">Get Started</a>
-            <button class="sidebar-toggle" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+            <button class="sidebar-toggle" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
 
@@ -39,9 +39,9 @@
         <button class="sidebar-close" onclick="closeNav()"><i class="fa-solid fa-xmark"
                 style="color: white"></i></button>
         <div class="sidenav-menu">
-            <a href="" class="menu-item">Home</a>
-            <a href="" class="menu-item">About</a>
-            <a href="" class="menu-item">Features</a>
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="aboutus.html" class="menu-item">About</a>
+            <a href="features.html" class="menu-item">Features</a>
             <a href="" class="menu-item">Contact us</a>
             <a href="" class="menu-item">Refer and Earn</a>
         </div>
@@ -68,8 +68,8 @@
     </section>
     <main>
         <section class="partners">
-            <h3 class="title">Schools we've partnered with</h3>
-            <div class="container scroller" data-direction="right" data-speed="slow">
+            <h3 class="title-pill">Schools we've partnered with</h3>
+            <div class="container scroller" data-direction="fast" data-speed="slow">
                 <div class="scroller__inner">
                     <div class="brand">
                         <img src="images/becky-parker.png" alt="becky-parker logo" class="badge">
@@ -99,6 +99,12 @@
                         <img src="images/bluecrest.png" alt="bluecrest logo" class="badge">
                         <p class="name">Blue Crest</p>
                     </div>
+
+                </div>
+            </div>
+
+            <div class="container scroller" data-direction="fast" data-speed="slow">
+                <div class="scroller__inner">
                     <div class="brand">
                         <img src="images/jofay.png" alt="jofay logo" class="badge">
                         <p class="name">Jofay</p>
@@ -132,8 +138,8 @@
         </section>
         <section class="aboutus" data-aos="fade-up">
             <div class="left">
-                <p class="title">About Us</p>
-                <h1 class="header">Why EduSolutions</h1>
+                <p class="title-pill">About Us</p>
+                <h1 class="header-gen">Why EduSolutions</h1>
                 <p class="desc">
                     Edusolutions is an affordable, reliable, and dynamic cloud-based learning and school management
                     software that automates
@@ -147,25 +153,27 @@
                         style="margin-left: 5px;"></i></a>
             </div>
             <div class="right">
-                <div class="info-card top">
-                    <p class="number">15+</p>
-                    <p class="text">Year of<br>Experience</p>
+                <div class="img-wrapper">
+                    <div class="info-card top">
+                        <p class="number">15+</p>
+                        <p class="text">Year of<br>Experience</p>
+                    </div>
+                    <div class="info-card bottom">
+                        <p class="number">100+</p>
+                        <p class="text">Schools<br>Onboarded</p>
+                    </div>
+                    <div class="outer-ring">
+                        <div class="inner-ring"></div>
+                    </div>
+                    <img src="images/computer.jpg" alt="" class="image1">
+                    <img src="images/man-typing.jpg" alt="" class="image2">
                 </div>
-                <div class="info-card bottom">
-                    <p class="number">100+</p>
-                    <p class="text">Schools<br>Onboarded</p>
-                </div>
-                <div class="outer-ring">
-                    <div class="inner-ring"></div>
-                </div>
-                <img src="images/computer.jpg" alt="" class="image1">
-                <img src="images/man-typing.jpg" alt="" class="image2">
             </div>
         </section>
 
         <section class="benefits" data-aos="fade-up">
-            <p class="title">Benefits</p>
-            <h3 class="header">Why you should choose us</h3>
+            <p class="title-pill">Benefits</p>
+            <h3 class="header-gen">Why you should choose us</h3>
 
             <div class="card-wrapper">
                 <div class="card">
@@ -221,8 +229,8 @@
 
 
         <section class="features" data-aos="fade-up">
-            <p class="title">Features</p>
-            <h1 class="header">Comprehensive Tools for Modern Education</h1>
+            <p class="title-pill">Features</p>
+            <h1 class="header-gen">Comprehensive Tools for Modern Education</h1>
 
             <div class="container">
                 <div class="item">
@@ -233,7 +241,7 @@
                         <div class="icon">
                             <img src="images/analytics-up.png" alt="">
                         </div>
-                        <h3 class="title">Personalized Student Dashboard</h3>
+                        <h3 class="heading">Personalized Student Dashboard</h3>
                         <p class="text">Edusolutions offers a comprehensive dashboard that gives students, parents, and
                             teachers instant
                             access to vital
@@ -249,7 +257,7 @@
                         <div class="icon">
                             <img src="images/analytics-02.png" alt="">
                         </div>
-                        <h3 class="title">Result Analysis & Performance Insights</h3>
+                        <h3 class="heading">Result Analysis & Performance Insights</h3>
                         <p class="text">
                             Generate precise, visually rich report cards and analytics with Edusolutions. Our result
                             management system supports
@@ -273,7 +281,7 @@
                         <div class="icon">
                             <img src="images/students.png" alt="">
                         </div>
-                        <h3 class="title">Interactive Student Dashboard</h3>
+                        <h3 class="heading">Interactive Student Dashboard</h3>
                         <p class="text">
                             Edusolutions provides a personalized and secure dashboard for each student, giving instant
                             access to academic records,
@@ -324,8 +332,8 @@
         </section>
 
         <section class="pricing" data-aos="fade-up">
-            <p class="title">Pricing</p>
-            <h1 class="header">Check out our pricing plan</h1>
+            <p class="title-pill">Pricing</p>
+            <h1 class="header-gen">Check out our pricing plan</h1>
 
             <div class="container">
                 <div class="plan-item">
@@ -571,8 +579,8 @@
         </section>
 
         <section class="faq" data-aos="fade-up">
-            <p class="title">FAQs</p>
-            <h1 class="header">Frequently Asked Questions</h1>
+            <p class="title-pill">FAQs</p>
+            <h1 class="header-gen">Frequently Asked Questions</h1>
             <div class="container">
                 <div class="collapsible-item">
                     <button type="button" class="collapsible">
@@ -673,10 +681,13 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="aboutus.html">About</a>
+                    </li>
+                    <li>
+                        <a href="features.html">Features</a>
                     </li>
                     <li>
                         <a href="#">Information required</a>

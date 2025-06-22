@@ -1,5 +1,5 @@
 .scroller {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -7,7 +7,7 @@
     padding-block: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 3.5rem;
 }
 
 .scroller[data-animated="true"] {

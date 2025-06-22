@@ -1,0 +1,71 @@
+.body {
+    --primary-color-minor: #FBA218;
+}
+
+.hero {
+    height: 150px;
+    margin-bottom: 100px;
+}
+
+.hero .hero-title {
+    font-size: 3rem
+}
+
+.intro {
+    text-align: center;
+}
+
+.title-pill {
+    margin-bottom: 25px;
+}
+
+.header-gen {
+    margin-bottom: 30px;
+}
+
+.key-features {}
+
+.key-features .features-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* .key-features .card {
+    box-sizing: content-box;
+    max-width: 400px;
+    height: 170px;
+    padding: 15px;
+    border: 1px solid var(--primary-color-minor);
+    border-radius: 15px;
+} */
+
+
+.key-features .card {
+    background: #fff;
+    border: 1px solid var(--primary-color-minor);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.key-features .card:hover {
+    transform: translateY(-5px);
+}
+
+.key-features .icon {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.key-features .icon>img {
+    width: 100%;
+}
+
+.key-features .heading {
+    margin-bottom: 12px;
+    color: black;
+}
+
+.key-features .text {}

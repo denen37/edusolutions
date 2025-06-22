@@ -9,6 +9,7 @@
     --text-color-minor: #FFFFFF;
     --accent-color: #F3C57E66;
     --lightgray: #8B8B8B66;
+    /* --lightgr #bebebe66; */
 
     --primary-font: 'Rimouski', sans-serif;
 
@@ -26,6 +27,7 @@ body {
     font-family: var(--primary-font);
     background-color: var(--bg-color);
     color: var(--text-color-major);
+    font-size: 1.2rem;
 }
 
 a {
@@ -49,7 +51,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 10px 30px;
+    padding: 10px 70px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -206,7 +208,7 @@ main>* {
 
 .hero {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/african-kid.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/african-kid.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,25 +223,25 @@ main>* {
 
 .hero .hero-text {
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .hero .caption {
     background-color: rgba(251, 162, 24, 0.7);
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 50px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     display: inline-block;
     margin-bottom: 30px;
 }
 
 .hero .hero-title {
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .hero .hero-title>.highlight {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin-bottom: 30px;
 }
 
@@ -263,7 +265,8 @@ main>* {
 
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    font-size: 1.1rem;
 }
 
 .hero .demo-btn:hover {
@@ -291,7 +294,7 @@ main>* {
 }
 
 main {
-    padding: 0 50px 0 50px;
+    padding: 0 100px 0 100px;
 }
 
 @media screen and (max-width: 500px) {
@@ -315,8 +318,8 @@ main {
 .partners .container {
     /* display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 70px;
-    margin-bottom: 15px; */
+    gap: 70px; */
+    margin-bottom: 15px;
 }
 
 .partners .brand {
@@ -329,12 +332,12 @@ main {
 
 
 .partners .brand .badge {
-    width: 100px;
-    height: 100px;
+    /* width: 70px; */
+    height: 90px;
 }
 
 .partners .brand .name {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .aboutus {
@@ -347,8 +350,7 @@ main {
     flex: 1;
 }
 
-.aboutus .left .title,
-.benefits .title {
+.title-pill {
     background-color: var(--accent-color);
     color: var(--primary-color-minor);
     padding: 8px 20px;
@@ -357,7 +359,7 @@ main {
     font-size: 0.9rem;
 }
 
-.header {
+.header-gen-gen {
     font-size: 1.5rem;
     color: var(--primary-color-major);
     margin: 20px 0;
@@ -385,6 +387,10 @@ main {
 }
 
 .aboutus .right {
+    flex: 1;
+}
+
+.aboutus .right .img-wrapper {
     width: 450px;
     height: 450px;
     margin: 0 auto;
@@ -489,7 +495,7 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-    .aboutus .right {
+    .aboutus .right .img-wrapper {
         width: 250px;
         height: 250px;
     }
@@ -541,9 +547,10 @@ main {
 
 .benefits .card {
 
+    text-align: left;
     /* min-width: 300px; */
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 20px 25px;
     box-shadow: 6px 6px 13px #c1c1c1,
         -6px -6px 13px #ffffff;
 }
@@ -593,18 +600,19 @@ main {
 
 .features .container .item {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
     column-gap: 30px;
 }
 
 .features .container .item.item-reverse {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 30px;
 }
 
 .features .container .item .image-wrapper {
-    background-color: var(--lightgray);
+    background-color: #bebebe66;
+    ;
     overflow-x: hidden;
 }
 
@@ -622,8 +630,10 @@ main {
 
 .features .container .item .image-wrapper>img {
     width: 100%;
-    min-width: 600px;
-    height: 496px;
+    /* min-width: 600px; */
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .features .container .item .content {
@@ -654,7 +664,7 @@ main {
     aspect-ratio: 1/1;
 }
 
-.features .container .item .title {
+.features .container .item .heading {
     color: black;
     margin-bottom: 30px;
 }
@@ -686,7 +696,7 @@ main {
     align-items: baseline;
 }
 
-.preview .header .title {
+.preview .header-gen .title {
     color: var(--primary-color-minor);
     font: 1rem;
 }
@@ -810,8 +820,8 @@ main {
 .testimonial {
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
-    padding: 30px 50px;
+    width: 100%;
+    padding: 50px;
     background-color: #FFDCA7;
     border-radius: 10px;
 }
@@ -825,7 +835,7 @@ main {
 .testimonial .card {
     background-color: white;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 30px 50px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -907,30 +917,34 @@ main {
     align-items: center;
     text-align: left;
     outline: none;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
 }
 
 .faq .active,
 .faq .collapsible:hover {}
 
 .faq .content {
-    padding: 10px 18px;
-    display: none;
+    padding: 0px 18px;
+    height: 0;
     overflow: hidden;
     background-color: white;
+    transition: height 0.35s;
 }
 
 footer {
     margin-top: 100px;
-    padding: 50px;
+    padding: 50px 70px;
     background-color: var(--primary-color-major);
     color: var(--text-color-minor);
+    font-size: 1rem
 }
 
 footer .container {
     display: flex;
     /* grid-template-columns: 1fr auto auto auto; */
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 100px;
     margin-bottom: 30px;
 }
 
@@ -948,7 +962,7 @@ footer .socials {
 
 footer .contacts-wrapper {
     margin-top: 50px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 footer .contacts-wrapper i {
@@ -985,7 +999,7 @@ footer ul {
     flex-direction: column;
     gap: 15px;
     margin-top: 10px;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
 }
 
 footer .content {
